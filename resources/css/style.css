@@ -1,0 +1,44 @@
+/* Body affects the whole page */
+body{
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+  width: 1300px;
+}
+/* Header covers the entire fixed header div */
+.header{
+  display: flex;
+  position: fixed;
+  z-index: 20;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  width: inherit;
+  justify-content: space-between;
+  border: thin solid red;
+}
+.header img{
+  margin-left: 10px;
+  margin-right: 50px;
+}
+.header ul{
+  list-style: none;
+}
+.header li{
+  text-decoration: underline;
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.mission{
+  display: flex;
+  position: relative;
+  background-image:   url(../images/img-mission-background.jpg);
+  background-repeat: no-repeat;
+  top: 100px;
+  height: 700px;
+  justify-content: center;
+  align-content: center;
+}
