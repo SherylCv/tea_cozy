@@ -17,7 +17,6 @@ body{
   border-bottom: 1px solid seashell;
   width: inherit;
   justify-content: space-between;
-  border: thin solid red;
 }
 .header img{
   margin-left: 10px;
@@ -32,6 +31,7 @@ body{
   margin-left: 10px;
   margin-right: 10px;
 }
+/*Mission covers the photo and text regarding the mission of the company*/
 .mission{
   display: flex;
   position: relative;
@@ -39,6 +39,13 @@ body{
   background-repeat: no-repeat;
   top: 100px;
   height: 700px;
-  justify-content: center;
-  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.missiontext{
+  display: block;
+  background-color: black;
+  width: 1200px;
 }
