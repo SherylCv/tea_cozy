@@ -1,4 +1,4 @@
-/* Body affects the whole page */
+/* body contains styling for page */
 body{
   font-family: Helvetica;
   font-size: 22px;
@@ -8,7 +8,13 @@ body{
   text-align: center;
   width: 1300px;
 }
-/* Header covers the entire fixed header div */
+/* page affects the whole page */
+.page{
+  display: flex;
+  flex-wrap: wrap;
+  width: inherit;
+}
+/* header covers the entire fixed header div */
 .header{
   display: flex;
   position: fixed;
@@ -31,21 +37,44 @@ body{
   margin-left: 10px;
   margin-right: 10px;
 }
-/*Mission covers the photo and text regarding the mission of the company*/
+/*mission covers the photo and text regarding the mission of the company*/
 .mission{
   display: flex;
-  position: relative;
   background-image:   url(../images/img-mission-background.jpg);
   background-repeat: no-repeat;
+  position: relative;
   top: 100px;
-  height: 700px;
   align-items: center;
   justify-content: space-around;
   margin-left: 50px;
   margin-right: 50px;
-}
-.missiontext{
-
-  background-color: black;
+  height: 700px;
   width: 1200px;
 }
+.missiontext{
+  background-color: black;
+  width: inherit;
+}
+/*teamonth covers the center photos listing types of teas of the month*/
+.teamonth{
+  display: flex;
+  position: relative;
+  top: 100px;
+  width: 1000px;
+  margin-left: 150px;
+  margin-right: 150px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.teadesc{
+   text-align: center;
+   width: 100%;
+}
+.teamonth img{
+  height: 200px;
+  width: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.teamonth p{
+  margin-top: 10px;
