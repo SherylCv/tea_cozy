@@ -18,11 +18,14 @@ body{
 .header{
   display: flex;
   position: fixed;
+  top: 0;
   z-index: 20;
   height: 69px;
   border-bottom: 1px solid seashell;
   width: inherit;
   justify-content: space-between;
+  background-color: black;
+  padding-top: 10px;
 }
 .header img{
   margin-left: 10px;
@@ -37,8 +40,11 @@ body{
   margin-left: 10px;
   margin-right: 10px;
 }
+a{
+  color: seashell;
+}
 /*mission covers the photo and text regarding the mission of the company*/
-.mission{
+#mission{
   display: flex;
   background-image:   url(../images/img-mission-background.jpg);
   background-repeat: no-repeat;
@@ -56,7 +62,7 @@ body{
   width: inherit;
 }
 /*teamonth covers the center photos listing types of teas of the month*/
-.teamonth{
+#teamonth{
   display: flex;
   position: relative;
   top: 100px;
@@ -70,17 +76,17 @@ body{
    text-align: center;
    width: 100%;
 }
-.teamonth img{
+#teamonth img{
   height: 200px;
   width: 300px;
   margin-left: 10px;
   margin-right: 10px;
 }
-.teamonth p{
+#teamonth p{
   margin-top: 10px;
 }
   /*locations covers the lower information about the locations */
-.locations{
+#locations{
   display: flex;
   background-image: url(../images/img-locations-background.jpg);
   background-repeat: no-repeat;
@@ -94,7 +100,7 @@ body{
   height: 500px;
   width: 1200px;
 }
-.locations h2{
+#locations h2{
   width: 1200px;
   text-align: center;
 }
